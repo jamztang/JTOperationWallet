@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AF22BA5144322FF0006BD91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF22BA4144322FF0006BD91 /* UIKit.framework */; };
+		1AF22BA7144322FF0006BD91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF22BA6144322FF0006BD91 /* Foundation.framework */; };
+		1AF22BA9144322FF0006BD91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF22BA8144322FF0006BD91 /* CoreGraphics.framework */; };
+		1AF22BAF144322FF0006BD91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AF22BAD144322FF0006BD91 /* InfoPlist.strings */; };
+		1AF22BB1144322FF0006BD91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF22BB0144322FF0006BD91 /* main.m */; };
+		1AF22BB5144322FF0006BD91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF22BB4144322FF0006BD91 /* AppDelegate.m */; };
+		1AF22BBD144322FF0006BD91 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF22BBC144322FF0006BD91 /* SenTestingKit.framework */; };
+		1AF22BBE144322FF0006BD91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF22BA4144322FF0006BD91 /* UIKit.framework */; };
+		1AF22BBF144322FF0006BD91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF22BA6144322FF0006BD91 /* Foundation.framework */; };
+		1AF22BC7144322FF0006BD91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AF22BC5144322FF0006BD91 /* InfoPlist.strings */; };
+		1AF22BCA144322FF0006BD91 /* JTOperationWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF22BC9144322FF0006BD91 /* JTOperationWalletTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AF22BC0144322FF0006BD91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AF22B97144322FE0006BD91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AF22B9F144322FF0006BD91;
+			remoteInfo = JTOperationWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AF22BA0144322FF0006BD91 /* JTOperationWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTOperationWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF22BA4144322FF0006BD91 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1AF22BA6144322FF0006BD91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1AF22BA8144322FF0006BD91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1AF22BAC144322FF0006BD91 /* JTOperationWallet-Info.plist */ = {isa = PBXFileReference; path = "JTOperationWallet-Info.plist"; sourceTree = "<group>"; };
+		1AF22BAE144322FF0006BD91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AF22BB0144322FF0006BD91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1AF22BB2144322FF0006BD91 /* JTOperationWallet-Prefix.pch */ = {isa = PBXFileReference; path = "JTOperationWallet-Prefix.pch"; sourceTree = "<group>"; };
+		1AF22BB3144322FF0006BD91 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		1AF22BB4144322FF0006BD91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1AF22BBB144322FF0006BD91 /* JTOperationWalletTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTOperationWalletTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF22BBC144322FF0006BD91 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1AF22BC4144322FF0006BD91 /* JTOperationWalletTests-Info.plist */ = {isa = PBXFileReference; path = "JTOperationWalletTests-Info.plist"; sourceTree = "<group>"; };
+		1AF22BC6144322FF0006BD91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AF22BC8144322FF0006BD91 /* JTOperationWalletTests.h */ = {isa = PBXFileReference; path = JTOperationWalletTests.h; sourceTree = "<group>"; };
+		1AF22BC9144322FF0006BD91 /* JTOperationWalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTOperationWalletTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AF22B9D144322FF0006BD91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF22BA5144322FF0006BD91 /* UIKit.framework in Frameworks */,
+				1AF22BA7144322FF0006BD91 /* Foundation.framework in Frameworks */,
+				1AF22BA9144322FF0006BD91 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AF22BB7144322FF0006BD91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF22BBD144322FF0006BD91 /* SenTestingKit.framework in Frameworks */,
+				1AF22BBE144322FF0006BD91 /* UIKit.framework in Frameworks */,
+				1AF22BBF144322FF0006BD91 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AF22B95144322FE0006BD91 = {
+			isa = PBXGroup;
+			children = (
+				1AF22BAA144322FF0006BD91 /* JTOperationWallet */,
+				1AF22BC2144322FF0006BD91 /* JTOperationWalletTests */,
+				1AF22BA3144322FF0006BD91 /* Frameworks */,
+				1AF22BA1144322FF0006BD91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AF22BA1144322FF0006BD91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AF22BA0144322FF0006BD91 /* JTOperationWallet.app */,
+				1AF22BBB144322FF0006BD91 /* JTOperationWalletTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AF22BA3144322FF0006BD91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AF22BA4144322FF0006BD91 /* UIKit.framework */,
+				1AF22BA6144322FF0006BD91 /* Foundation.framework */,
+				1AF22BA8144322FF0006BD91 /* CoreGraphics.framework */,
+				1AF22BBC144322FF0006BD91 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AF22BAA144322FF0006BD91 /* JTOperationWallet */ = {
+			isa = PBXGroup;
+			children = (
+				1AF22BB3144322FF0006BD91 /* AppDelegate.h */,
+				1AF22BB4144322FF0006BD91 /* AppDelegate.m */,
+				1AF22BAB144322FF0006BD91 /* Supporting Files */,
+			);
+			path = JTOperationWallet;
+			sourceTree = "<group>";
+		};
+		1AF22BAB144322FF0006BD91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AF22BAC144322FF0006BD91 /* JTOperationWallet-Info.plist */,
+				1AF22BAD144322FF0006BD91 /* InfoPlist.strings */,
+				1AF22BB0144322FF0006BD91 /* main.m */,
+				1AF22BB2144322FF0006BD91 /* JTOperationWallet-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AF22BC2144322FF0006BD91 /* JTOperationWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AF22BC8144322FF0006BD91 /* JTOperationWalletTests.h */,
+				1AF22BC9144322FF0006BD91 /* JTOperationWalletTests.m */,
+				1AF22BC3144322FF0006BD91 /* Supporting Files */,
+			);
+			path = JTOperationWalletTests;
+			sourceTree = "<group>";
+		};
+		1AF22BC3144322FF0006BD91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AF22BC4144322FF0006BD91 /* JTOperationWalletTests-Info.plist */,
+				1AF22BC5144322FF0006BD91 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AF22B9F144322FF0006BD91 /* JTOperationWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AF22BCD144322FF0006BD91 /* Build configuration list for PBXNativeTarget "JTOperationWallet" */;
+			buildPhases = (
+				1AF22B9C144322FF0006BD91 /* Sources */,
+				1AF22B9D144322FF0006BD91 /* Frameworks */,
+				1AF22B9E144322FF0006BD91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JTOperationWallet;
+			productName = JTOperationWallet;
+			productReference = 1AF22BA0144322FF0006BD91 /* JTOperationWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AF22BBA144322FF0006BD91 /* JTOperationWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AF22BD0144322FF0006BD91 /* Build configuration list for PBXNativeTarget "JTOperationWalletTests" */;
+			buildPhases = (
+				1AF22BB6144322FF0006BD91 /* Sources */,
+				1AF22BB7144322FF0006BD91 /* Frameworks */,
+				1AF22BB8144322FF0006BD91 /* Resources */,
+				1AF22BB9144322FF0006BD91 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AF22BC1144322FF0006BD91 /* PBXTargetDependency */,
+			);
+			name = JTOperationWalletTests;
+			productName = JTOperationWalletTests;
+			productReference = 1AF22BBB144322FF0006BD91 /* JTOperationWalletTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AF22B97144322FE0006BD91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1AF22B9A144322FE0006BD91 /* Build configuration list for PBXProject "JTOperationWallet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1AF22B95144322FE0006BD91;
+			productRefGroup = 1AF22BA1144322FF0006BD91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AF22B9F144322FF0006BD91 /* JTOperationWallet */,
+				1AF22BBA144322FF0006BD91 /* JTOperationWalletTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AF22B9E144322FF0006BD91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF22BAF144322FF0006BD91 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AF22BB8144322FF0006BD91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF22BC7144322FF0006BD91 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AF22BB9144322FF0006BD91 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AF22B9C144322FF0006BD91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF22BB1144322FF0006BD91 /* main.m in Sources */,
+				1AF22BB5144322FF0006BD91 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AF22BB6144322FF0006BD91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF22BCA144322FF0006BD91 /* JTOperationWalletTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AF22BC1144322FF0006BD91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AF22B9F144322FF0006BD91 /* JTOperationWallet */;
+			targetProxy = 1AF22BC0144322FF0006BD91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1AF22BAD144322FF0006BD91 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AF22BAE144322FF0006BD91 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1AF22BC5144322FF0006BD91 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AF22BC6144322FF0006BD91 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AF22BCB144322FF0006BD91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AF22BCC144322FF0006BD91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AF22BCE144322FF0006BD91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JTOperationWallet/JTOperationWallet-Prefix.pch";
+				INFOPLIST_FILE = "JTOperationWallet/JTOperationWallet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1AF22BCF144322FF0006BD91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JTOperationWallet/JTOperationWallet-Prefix.pch";
+				INFOPLIST_FILE = "JTOperationWallet/JTOperationWallet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1AF22BD1144322FF0006BD91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JTOperationWallet.app/JTOperationWallet";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JTOperationWallet/JTOperationWallet-Prefix.pch";
+				INFOPLIST_FILE = "JTOperationWalletTests/JTOperationWalletTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1AF22BD2144322FF0006BD91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JTOperationWallet.app/JTOperationWallet";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JTOperationWallet/JTOperationWallet-Prefix.pch";
+				INFOPLIST_FILE = "JTOperationWalletTests/JTOperationWalletTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AF22B9A144322FE0006BD91 /* Build configuration list for PBXProject "JTOperationWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF22BCB144322FF0006BD91 /* Debug */,
+				1AF22BCC144322FF0006BD91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AF22BCD144322FF0006BD91 /* Build configuration list for PBXNativeTarget "JTOperationWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF22BCE144322FF0006BD91 /* Debug */,
+				1AF22BCF144322FF0006BD91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1AF22BD0144322FF0006BD91 /* Build configuration list for PBXNativeTarget "JTOperationWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF22BD1144322FF0006BD91 /* Debug */,
+				1AF22BD2144322FF0006BD91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AF22B97144322FE0006BD91 /* Project object */;
+}
