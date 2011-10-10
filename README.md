@@ -5,7 +5,7 @@ An objective-c NSProxy based library for simulating what blocks offer.
 
 Installation
 ------------
-Include lib/JTOperationWallet.* into your project
+Include lib/JTOperationWallet.*, lib/JTObjectProxy.* into your project
 
 
 Usage
@@ -37,7 +37,7 @@ Usage
 # Sceniaro 2
 
     JTOperationWallet *wallet = [JTOperationWallet wallet];
-    [[wallet prepareWithInvocationTarget:<your_object>] printResponse:<your_object>.futureResponse];
+    [[wallet prepareWithInvocationTarget:self] printResponse:[<your_object> futureResponse]];
     <your_object>.completionWallet = wallet;
 
     [<your_object> setComplete];	// Invoking [wallet invoke]; inside your object implementation
