@@ -7,6 +7,8 @@
 //
 
 #import "JTOperationWalletTests.h"
+#import "JTOperationWallet.h"
+#import "JTWalletHolder.h"
 
 @implementation JTOperationWalletTests
 
@@ -24,9 +26,41 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in JTOperationWalletTests");
+- (void)testInvoke {
+    NSMutableArray *anArray = [NSMutableArray array];
+
+    JTWalletHolder *holder = [[JTWalletHolder alloc] init];
+    
+    JTOperationWallet *wallet = [JTOperationWallet wallet];
+    [[wallet prepareWithInvocationTarget:anArray] addObject:@"1"];
+    [[wallet prepareWithInvocationTarget:anArray] addObject:@"2"];
+
+    holder.completionWallet = wallet;
+    
+    STAssertEqualObjects(anArray, [NSMutableArray array], @"holder should have not executed the operations until setComplete is invoked", nil);
+
+    [holder setComplete];
+
+    NSMutableArray *expectedArray = [NSMutableArray arrayWithObjects:@"1", @"2", nil];
+
+    STAssertEqualObjects(anArray, expectedArray, @"[holder setComplete] should have executed the operation", nil);
+}
+
+- (void)testInvokeOnQueue {
+    NSMutableArray *anArray = [NSMutableArray array];
+
+    JTOperationWallet *wallet = [JTOperationWallet wallet];
+    [[wallet prepareWithInvocationTarget:anArray] addObject:@"1"];
+    [[wallet prepareWithInvocationTarget:anArray] addObject:@"2"];
+
+    STAssertEqualObjects(anArray, [NSMutableArray array], @"holder should have not executed the operations until setComplete is invoked", nil);
+
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    [wallet invokeOnQueue:queue waitUntilFinished:YES];
+
+    NSMutableArray *expectedArray = [NSMutableArray arrayWithObjects:@"1", @"2", nil];
+
+    STAssertEqualObjects(anArray, expectedArray, @"[holder setComplete] should have executed the operation", nil);
 }
 
 @end

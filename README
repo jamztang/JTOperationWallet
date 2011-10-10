@@ -1,0 +1,24 @@
+JTOperationWallet
+-----------------
+An objective-c NSProxy based library for simulating what blocks offer.
+
+
+Installation
+------------
+Include lib/JTOperationWallet.* into your project
+
+
+Usage
+-----
+    NSMutableArray *anArray = [NSMutableArray array];
+
+    JTOperationWallet *wallet = [JTOperationWallet wallet];
+
+    [[wallet prepareWithInvocationTarget:anArray] addObject:@"1"];
+    [[wallet prepareWithInvocationTarget:anArray] addObject:@"2"];
+
+
+    <your_object>.completionWallet = wallet;
+
+    [<your_object> setComplete];	// Invoking [wallet invoke]; inside your object implementation
+

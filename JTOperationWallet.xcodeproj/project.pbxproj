@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A76A58714432713005D85A6 /* JTWalletHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A76A58614432713005D85A6 /* JTWalletHolder.m */; };
 		1AF22BA5144322FF0006BD91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF22BA4144322FF0006BD91 /* UIKit.framework */; };
 		1AF22BA7144322FF0006BD91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF22BA6144322FF0006BD91 /* Foundation.framework */; };
 		1AF22BA9144322FF0006BD91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF22BA8144322FF0006BD91 /* CoreGraphics.framework */; };
@@ -18,6 +19,7 @@
 		1AF22BBF144322FF0006BD91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF22BA6144322FF0006BD91 /* Foundation.framework */; };
 		1AF22BC7144322FF0006BD91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AF22BC5144322FF0006BD91 /* InfoPlist.strings */; };
 		1AF22BCA144322FF0006BD91 /* JTOperationWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF22BC9144322FF0006BD91 /* JTOperationWalletTests.m */; };
+		1AF22BD61443233F0006BD91 /* JTOperationWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF22BD51443233F0006BD91 /* JTOperationWallet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,22 +33,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A76A58514432713005D85A6 /* JTWalletHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTWalletHolder.h; sourceTree = "<group>"; };
+		1A76A58614432713005D85A6 /* JTWalletHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTWalletHolder.m; sourceTree = "<group>"; };
 		1AF22BA0144322FF0006BD91 /* JTOperationWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTOperationWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF22BA4144322FF0006BD91 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1AF22BA6144322FF0006BD91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1AF22BA8144322FF0006BD91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1AF22BAC144322FF0006BD91 /* JTOperationWallet-Info.plist */ = {isa = PBXFileReference; path = "JTOperationWallet-Info.plist"; sourceTree = "<group>"; };
+		1AF22BAC144322FF0006BD91 /* JTOperationWallet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JTOperationWallet-Info.plist"; sourceTree = "<group>"; };
 		1AF22BAE144322FF0006BD91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1AF22BB0144322FF0006BD91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1AF22BB2144322FF0006BD91 /* JTOperationWallet-Prefix.pch */ = {isa = PBXFileReference; path = "JTOperationWallet-Prefix.pch"; sourceTree = "<group>"; };
-		1AF22BB3144322FF0006BD91 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		1AF22BB2144322FF0006BD91 /* JTOperationWallet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JTOperationWallet-Prefix.pch"; sourceTree = "<group>"; };
+		1AF22BB3144322FF0006BD91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1AF22BB4144322FF0006BD91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1AF22BBB144322FF0006BD91 /* JTOperationWalletTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTOperationWalletTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF22BBC144322FF0006BD91 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1AF22BC4144322FF0006BD91 /* JTOperationWalletTests-Info.plist */ = {isa = PBXFileReference; path = "JTOperationWalletTests-Info.plist"; sourceTree = "<group>"; };
+		1AF22BC4144322FF0006BD91 /* JTOperationWalletTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JTOperationWalletTests-Info.plist"; sourceTree = "<group>"; };
 		1AF22BC6144322FF0006BD91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1AF22BC8144322FF0006BD91 /* JTOperationWalletTests.h */ = {isa = PBXFileReference; path = JTOperationWalletTests.h; sourceTree = "<group>"; };
+		1AF22BC8144322FF0006BD91 /* JTOperationWalletTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTOperationWalletTests.h; sourceTree = "<group>"; };
 		1AF22BC9144322FF0006BD91 /* JTOperationWalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTOperationWalletTests.m; sourceTree = "<group>"; };
+		1AF22BD41443233F0006BD91 /* JTOperationWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTOperationWallet.h; sourceTree = "<group>"; };
+		1AF22BD51443233F0006BD91 /* JTOperationWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTOperationWallet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +112,12 @@
 		1AF22BAA144322FF0006BD91 /* JTOperationWallet */ = {
 			isa = PBXGroup;
 			children = (
+				1AF22BD3144323280006BD91 /* lib */,
 				1AF22BB3144322FF0006BD91 /* AppDelegate.h */,
 				1AF22BB4144322FF0006BD91 /* AppDelegate.m */,
 				1AF22BAB144322FF0006BD91 /* Supporting Files */,
+				1A76A58514432713005D85A6 /* JTWalletHolder.h */,
+				1A76A58614432713005D85A6 /* JTWalletHolder.m */,
 			);
 			path = JTOperationWallet;
 			sourceTree = "<group>";
@@ -141,6 +150,15 @@
 				1AF22BC5144322FF0006BD91 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AF22BD3144323280006BD91 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				1AF22BD41443233F0006BD91 /* JTOperationWallet.h */,
+				1AF22BD51443233F0006BD91 /* JTOperationWallet.m */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +268,8 @@
 			files = (
 				1AF22BB1144322FF0006BD91 /* main.m in Sources */,
 				1AF22BB5144322FF0006BD91 /* AppDelegate.m in Sources */,
+				1AF22BD61443233F0006BD91 /* JTOperationWallet.m in Sources */,
+				1A76A58714432713005D85A6 /* JTWalletHolder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +362,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JTOperationWallet/JTOperationWallet-Prefix.pch";
 				INFOPLIST_FILE = "JTOperationWallet/JTOperationWallet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -353,6 +374,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JTOperationWallet/JTOperationWallet-Prefix.pch";
 				INFOPLIST_FILE = "JTOperationWallet/JTOperationWallet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -411,6 +433,7 @@
 				1AF22BCF144322FF0006BD91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AF22BD0144322FF0006BD91 /* Build configuration list for PBXNativeTarget "JTOperationWalletTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +442,7 @@
 				1AF22BD2144322FF0006BD91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
