@@ -10,4 +10,6 @@
 
 @interface JTOperationWalletTests : SenTestCase
 
+@property (nonatomic, copy) NSString *result;
+
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A76A58714432713005D85A6 /* JTWalletHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A76A58614432713005D85A6 /* JTWalletHolder.m */; };
+		1ADB7A4614434EB800347EED /* JTObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADB7A4514434EB800347EED /* JTObjectProxy.m */; };
 		1AF22BA5144322FF0006BD91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF22BA4144322FF0006BD91 /* UIKit.framework */; };
 		1AF22BA7144322FF0006BD91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF22BA6144322FF0006BD91 /* Foundation.framework */; };
 		1AF22BA9144322FF0006BD91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF22BA8144322FF0006BD91 /* CoreGraphics.framework */; };
@@ -35,6 +36,8 @@
 /* Begin PBXFileReference section */
 		1A76A58514432713005D85A6 /* JTWalletHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTWalletHolder.h; sourceTree = "<group>"; };
 		1A76A58614432713005D85A6 /* JTWalletHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTWalletHolder.m; sourceTree = "<group>"; };
+		1ADB7A4414434EB800347EED /* JTObjectProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTObjectProxy.h; sourceTree = "<group>"; };
+		1ADB7A4514434EB800347EED /* JTObjectProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTObjectProxy.m; sourceTree = "<group>"; };
 		1AF22BA0144322FF0006BD91 /* JTOperationWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTOperationWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF22BA4144322FF0006BD91 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1AF22BA6144322FF0006BD91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -157,6 +160,8 @@
 			children = (
 				1AF22BD41443233F0006BD91 /* JTOperationWallet.h */,
 				1AF22BD51443233F0006BD91 /* JTOperationWallet.m */,
+				1ADB7A4414434EB800347EED /* JTObjectProxy.h */,
+				1ADB7A4514434EB800347EED /* JTObjectProxy.m */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 				1AF22BB5144322FF0006BD91 /* AppDelegate.m in Sources */,
 				1AF22BD61443233F0006BD91 /* JTOperationWallet.m in Sources */,
 				1A76A58714432713005D85A6 /* JTWalletHolder.m in Sources */,
+				1ADB7A4614434EB800347EED /* JTObjectProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

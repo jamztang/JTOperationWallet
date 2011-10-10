@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JTOperationWallet.h"
 
-@interface JTWalletHolder : NSObject
+@class JTOperationWallet;
+@class JTObjectProxy;
+
+@interface JTWalletHolder : NSObject {
+    NSDictionary *_dict;
+    JTObjectProxy *_futureDict;
+}
 
 @property (nonatomic, retain) JTOperationWallet *completionWallet;
+@property (nonatomic, readonly) NSDictionary *futureDict;
 
 - (void)setComplete;
 

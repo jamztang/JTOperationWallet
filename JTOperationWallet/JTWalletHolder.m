@@ -7,6 +7,8 @@
 //
 
 #import "JTWalletHolder.h"
+#import "JTOperationWallet.h"
+#import "JTObjectProxy.h"
 
 @implementation JTWalletHolder
 
@@ -17,18 +19,30 @@
     self = [super init];
     if (self) {
         // Initialization code here.
+
+        _futureDict = [JTObjectProxy proxyWithClass:[NSDictionary class]];
     }
     
     return self;
 }
 
+- (void)dealloc {
+    [self.completionWallet release];
+    [_dict release];
+    [super dealloc];
+}
+
+#pragma mark Instance method
+
 - (void)setComplete {
+    _dict = [NSDictionary dictionaryWithObject:@"1" forKey:@"firstObject"];
+    [_futureDict invokeWithTarget:_dict];
     [self.completionWallet invoke];
 }
 
-- (void)dealloc {
-    [self.completionWallet release];
-    [super dealloc];
+
+- (NSDictionary *)futureDict {
+    return (id)_futureDict;
 }
 
 @end

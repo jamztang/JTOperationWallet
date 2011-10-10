@@ -9,8 +9,11 @@
 #import "JTOperationWalletTests.h"
 #import "JTOperationWallet.h"
 #import "JTWalletHolder.h"
+#import "JTObjectProxy.h"
 
 @implementation JTOperationWalletTests
+
+@synthesize result;
 
 - (void)setUp
 {
@@ -26,6 +29,14 @@
     [super tearDown];
 }
 
+#pragma mark Helper
+
+- (void)setResultWithDict:(NSDictionary *)dict {
+    [self setResult:[dict objectForKey:@"firstObject"]];
+}
+
+#pragma mark Tests
+
 - (void)testInvoke {
     NSMutableArray *anArray = [NSMutableArray array];
 
@@ -39,7 +50,7 @@
     
     STAssertEqualObjects(anArray, [NSMutableArray array], @"holder should have not executed the operations until setComplete is invoked", nil);
 
-    [holder setComplete];
+    [wallet invoke];
 
     NSMutableArray *expectedArray = [NSMutableArray arrayWithObjects:@"1", @"2", nil];
 
@@ -56,11 +67,27 @@
     STAssertEqualObjects(anArray, [NSMutableArray array], @"holder should have not executed the operations until setComplete is invoked", nil);
 
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    queue.maxConcurrentOperationCount = 1;
     [wallet invokeOnQueue:queue waitUntilFinished:YES];
 
     NSMutableArray *expectedArray = [NSMutableArray arrayWithObjects:@"1", @"2", nil];
 
     STAssertEqualObjects(anArray, expectedArray, @"[holder setComplete] should have executed the operation", nil);
+}
+
+- (void)testSimulateCompletion {
+    JTWalletHolder *holder = [[JTWalletHolder alloc] init];
+
+    JTOperationWallet *wallet = [JTOperationWallet wallet];
+    [[wallet prepareWithInvocationTarget:self] setResultWithDict:holder.futureDict];
+
+    holder.completionWallet = wallet;
+
+    STAssertEqualObjects(self.result, nil, nil, nil);
+
+    [holder setComplete];
+
+    STAssertEqualObjects(self.result, @"1", nil, nil);
 }
 
 @end

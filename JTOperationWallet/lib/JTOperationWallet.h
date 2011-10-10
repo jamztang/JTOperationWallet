@@ -11,11 +11,13 @@
 @interface JTOperationWallet : NSProxy {
     id              _proxiedTarget;
     NSMutableArray *_invocations;
+//    NSMutableArray *_results;
 }
 
 + (JTOperationWallet *)wallet;
 
 - (id)prepareWithInvocationTarget:(id)target;
+//- (id)prepareWithInvocationTarget:(id)target result:(void *)result;
 
 // Invoke synchronizely on the thread which triggers
 - (void)invoke;
