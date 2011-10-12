@@ -1,11 +1,11 @@
 JTOperationWallet
------------------
-An objective-c NSProxy based library for simulating what blocks offer.
+=================
+An objective-c NSProxy based library for simulating what blocks offer, an iOS 3 compatible alternative solution to blocks.
 
 
 Installation
 ------------
-Include lib/JTOperationWallet.*, lib/JTObjectProxy.* into your project
+Include files in JTOperationWallet/lib/ into your project
 
 
 Usage

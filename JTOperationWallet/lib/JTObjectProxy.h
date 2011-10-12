@@ -1,10 +1,10 @@
-//
-//  JTObjectProxy.h
-//  JTOperationWallet
-//
-//  Created by James Tang on 11/10/2011.
-//  Copyright (c) 2011 CUHK. All rights reserved.
-//
+/*
+ * This file is part of the JTRevealSidebar package.
+ * (c) James Tang <mystcolor@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 #import <Foundation/Foundation.h>
 
